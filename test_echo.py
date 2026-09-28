@@ -45,4 +45,4 @@ def test_patch_returns_data(base_url, session):
 
 def test_delete_returns_status_200(base_url, session):
     response = session.delete(f"{base_url}/delete")
-    assert response.status_code == 404
+    assert response.status_code == 200
